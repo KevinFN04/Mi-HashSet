@@ -39,4 +39,13 @@ public class MiHashSet
     {
         lista.clear();
     }
+    
+    /**
+     * Comprueba si el elemento dado esta en la lista, true = si esta, false = no esta.
+     */
+    public boolean contains(int elemento)
+    {
+        return lista.contains(elemento);
+    }
+    
 }
