@@ -22,16 +22,16 @@ public class MiHashSet
      */
     public boolean add(int valor)
     {
-        boolean noContiene = false;
+        boolean noContiene = true;
         if (!lista.contains(valor)){
             lista.add(valor);
         }
         else{
-            noContiene = true;
+            noContiene = false;
         }
         return noContiene;
     }
-    
+
     /**
      * Elimina todos los elementos de la lista
      */
@@ -39,7 +39,7 @@ public class MiHashSet
     {
         lista.clear();
     }
-    
+
     /**
      * Comprueba si el elemento dado esta en la lista, true = si esta, false = no esta.
      */
@@ -47,14 +47,14 @@ public class MiHashSet
     {
         return lista.contains(elemento);
     }
-    
+
     /**
      * Comprueba si la lista esta vacia. true = vacia, false = contiene algun dato.
      */
     public boolean isEmpty(){
         return lista.isEmpty();
     }
-    
+
     /**
      * Elimina un elemento dado de la lista.
      */
@@ -67,7 +67,7 @@ public class MiHashSet
         }
         return eliminado;
     }
-    
+
     /**
      * Devuelve la cantidad de elementos que hay en la lista.
      */
@@ -75,20 +75,20 @@ public class MiHashSet
     {
         return lista.size();
     }
-    
+
     /**
      * devuelve una cadena conteniendo todos los elementos del conjunto separados por comas y entre corchetes.
      */
     public String toString()
-    {
+    {		      
         String elementosLista = "[" + lista.get(0);
         for (int count = 1; size() > count; count++){
-            elementosLista = elementosLista + ", "  + lista.get(count);
-        }
+              elementosLista = elementosLista + ", "  + lista.get(count);
+            }
         elementosLista = elementosLista + "]";
         return elementosLista;
     }
-    
+
     /**
      * devuelve verdadero si el parámetro es igual al conjunto sobre el que se invoca y falso en otro caso.
      */
