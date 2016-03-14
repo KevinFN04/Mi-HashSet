@@ -68,5 +68,11 @@ public class MiHashSet
         return eliminado;
     }
     
-    
+    /**
+     * Devuelve la cantidad de elementos que hay en la lista.
+     */
+    public int size()
+    {
+        return lista.size();
+    }
 }
