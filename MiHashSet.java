@@ -31,5 +31,12 @@ public class MiHashSet
         }
         return noContiene;
     }
-
+    
+    /**
+     * Elimina todos los elementos de la lista
+     */
+    public void clear()
+    {
+        lista.clear();
+    }
 }
