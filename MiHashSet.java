@@ -81,8 +81,8 @@ public class MiHashSet
      */
     public String toString()
     {
-        String elementosLista = "[";
-        for (int count = 0; size() > count; count++){
+        String elementosLista = "[" + lista.get(0);
+        for (int count = 1; size() > count; count++){
             elementosLista = elementosLista + ", "  + lista.get(count);
         }
         elementosLista = elementosLista + "]";
