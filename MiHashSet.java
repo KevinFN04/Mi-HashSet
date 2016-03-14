@@ -54,4 +54,19 @@ public class MiHashSet
     public boolean isEmpty(){
         return lista.isEmpty();
     }
+    
+    /**
+     * Elimina un elemento dado de la lista.
+     */
+    public boolean remove(int elemento)
+    {
+        boolean eliminado = false;
+        if (lista.contains(elemento) == true){
+            lista.remove(lista.indexOf(elemento));
+            eliminado = true;
+        }
+        return eliminado;
+    }
+    
+    
 }
