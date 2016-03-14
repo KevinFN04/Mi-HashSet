@@ -90,6 +90,16 @@ public class MiHashSet
     }
     
     /**
-     * 
+     * devuelve verdadero si el parámetro es igual al conjunto sobre el que se invoca y falso en otro caso.
      */
+    public boolean equals(MiHashSet otroConjunto)
+    {
+        boolean igual = true;
+        for (int count = 0; size() > count; count++){
+            if (!otroConjunto.contains(lista.get(count))){
+                igual = false;
+            }
+        }
+        return igual;
+    }
 }
