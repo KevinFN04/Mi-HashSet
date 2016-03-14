@@ -48,4 +48,10 @@ public class MiHashSet
         return lista.contains(elemento);
     }
     
+    /**
+     * Comprueba si la lista esta vacia. true = vacia, false = contiene algun dato.
+     */
+    public boolean isEmpty(){
+        return lista.isEmpty();
+    }
 }
